@@ -95,6 +95,8 @@ function validateName()
       error.innerHTML="Please Enter the Form properly.."
       error.style.color="red";
     }else{
+      var error=document.getElementById('form-error-msg');
+      error.innerHTML=""
       var params={
         name:document.getElementById("name").value,
         email:document.getElementById("email").value,
